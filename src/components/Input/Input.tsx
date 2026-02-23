@@ -7,7 +7,6 @@ export interface InputProps {
   type?: "text" | "password" | "number";
 }
 
-/** Primary UI component for user interaction */
 export const Input = ({ type, clearable }: InputProps) => {
   const [value, setValue] = useState("");
   const [isShow, setIsShow] = useState(false);
