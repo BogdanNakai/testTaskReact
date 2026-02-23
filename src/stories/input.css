@@ -1,0 +1,31 @@
+.button__view-password {
+  position: absolute;
+  left: 0;
+  background: none;
+  border: none;
+}
+
+.button__clear {
+  position: absolute;
+  right: 5px;
+  background: none;
+  border: none;
+}
+
+.input {
+  height: 30px;
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 15px;
+}
+
+.input__password {
+  padding-left: 35px;
+}
+
+.box__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
