@@ -16,21 +16,24 @@ type Story = StoryObj<typeof meta>;
 export const PrimarySuccess: Story = {
   args: {
     type: "success",
-		info: "All OK",
-	 timeOut: 9000,
+    message: "Success",
+    duration: 5000,
+    showCloseButton: true,
   },
 };
 export const PrimaryError: Story = {
   args: {
     type: "error",
-    info: "Error",
-    timeOut: 5000,
+    message: "Error",
+    duration: 5000,
+    showCloseButton: true,
   },
 };
 export const PrimaryInfo: Story = {
   args: {
     type: "info",
-    info: "Info",
-    timeOut: 5000,
+    message: "Info",
+    duration: 5000,
+    showCloseButton: true,
   },
 };

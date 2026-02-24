@@ -107,28 +107,40 @@
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	visibility: hidden;
+	transform: translateX(20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.message-container_error {
+.message-button-close {
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 25px;
+	height: 25px;
+	background: #f3f8cc;
+	color: #000000;
+	border-radius: 100%;
+}
+
+.error {
 	background-color: #f06767;
 }
 
-.message-container_success {
+.success {
 	background-color: #95f067;
 }
 
-.message-container_info {
+.info {
 	background-color: #67bef0;
 }
 
-.show {
+.hide {
 	opacity: 0;
-	visibility: hidden;
+	transform: translateX(20px);
 }
 
-.view {
+.show {
 	opacity: 1;
-	visibility: visible;
+	transform: translateX(0);
 	right: 90px;
 }

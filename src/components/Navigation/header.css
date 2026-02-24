@@ -1,0 +1,171 @@
+a,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  z-index: 99;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.storybook-header {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.storybook-header svg {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storybook-header h1 {
+    position: relative;
+      z-index: 3;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 6px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.storybook-header button+button {
+  margin-left: 10px;
+}
+
+.storybook-header .welcome {
+  margin-right: 10px;
+  color: #333;
+  font-size: 14px;
+}
+
+.storybook-page {
+  position: relative;
+  z-index: 3;
+  padding: 48px 20px;
+  max-width: 600px;
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.storybook-page h2 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.storybook-page p {
+  margin: 1em 0;
+}
+
+.button-burger {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  transition: all 0.3s;
+}
+
+.button-burger.active {
+  gap: 0;
+}
+
+.button-burger.active .button-line:nth-of-type(2) {
+  position: absolute;
+  opacity: 0;
+}
+
+.button-burger.active .button-line:last-child {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.button-burger.active .button-line:first-child {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.button-line {
+  background-color: #000;
+  width: 85%;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  background-color: #ffc4c4;
+  top: 0px;
+  right: -100%;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.menu.active {
+  position: fixed;
+  right: 0%;
+}
+
+.menu-list {
+  padding: 0;
+}
+
+.menu-link {
+  color: #000;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
